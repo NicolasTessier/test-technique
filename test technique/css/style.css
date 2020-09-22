@@ -1,0 +1,80 @@
+html,body{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+body{
+  background-image: url("../img/wallpaper.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+#div{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+#img{
+  height: 60%;
+
+}
+
+#bouton{
+  background: linear-gradient(135deg, #5bb679, #1b410d);
+  border: white solid 1px;
+  color: white;
+  padding: 15px;
+  box-shadow: 4px 4px 4px #bc890f;
+  transition: 0.5s;
+  cursor: pointer;
+
+}
+
+#bouton:hover{
+  transition: 0.5s;
+  box-shadow: none;
+}
+
+ul{
+  text-align: center;
+}
+
+li{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+@media (min-width : 900px) {
+
+  #div{
+    flex-direction: row;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: space-around;
+  }
+
+  #img{
+    max-height: 80%;
+    max-width: 60%;
+  }
+
+  li{
+    font-size: 25px;
+  }
+
+}
